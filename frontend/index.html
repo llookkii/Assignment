@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Form</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h2>Hi There!</h2>
+    <form id="myForm">
+        <label for="name">Name:</label><br>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="age">Age:</label><br>
+        <input type="number" id="age" name="age" required><br><br>
+
+        <button type="submit">Submit</button>
+    </form>
+    <p id="error-message" style="color: red;"></p>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
