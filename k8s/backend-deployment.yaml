@@ -17,9 +17,6 @@ spec:
           image: gcr.io/[PROJECT_ID]/backend:latest
           ports:
             - containerPort: 5000
-          envFrom:
-            - secretRef:
-                name: backend-secrets
 ---
 apiVersion: v1
 kind: Service
