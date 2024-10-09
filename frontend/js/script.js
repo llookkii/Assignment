@@ -23,7 +23,7 @@ document.getElementById('detailsForm').addEventListener('submit', function(event
     }
 
     // URL for backend service in Kubernetes
-    const backendUrl = 'http://backend-service:5000/submit';  // Kubernetes service DNS name
+    const backendUrl = 'http://34.23.244.181:5000/submit';  // Kubernetes service DNS name
 
     // Send the form data to the backend
     fetch(backendUrl, {
