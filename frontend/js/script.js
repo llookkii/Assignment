@@ -22,16 +22,15 @@ document.getElementById('detailsForm').addEventListener('submit', function(event
         return;
     }
 
-    // URL for backend service in Kubernetes (Updated to the correct backend URL)
-    const backendUrl = '/api';  // Update this to match your backend
-
+    // Convert age to integer
+    const backendUrl = 'http://backend-service:5000/submit';
     // Send the form data to the backend
     fetch(backendUrl, {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({ name, age })
+        body: JSON.stringify({ name, age: parseInt(age, 10) }) // Convert age to integer
     })
     .then(response => {
         if (!response.ok) {
