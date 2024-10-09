@@ -22,8 +22,8 @@ document.getElementById('detailsForm').addEventListener('submit', function(event
         return;
     }
 
-    // URL for backend service in Kubernetes
-    const backendUrl = 'http://34.23.244.181:5000/submit';  // Kubernetes service DNS name
+    // URL for backend service in Kubernetes (Updated to the correct backend URL)
+    const backendUrl = '/api';  // Update this to match your backend
 
     // Send the form data to the backend
     fetch(backendUrl, {
@@ -34,6 +34,10 @@ document.getElementById('detailsForm').addEventListener('submit', function(event
         body: JSON.stringify({ name, age })
     })
     .then(response => {
+        if (!response.ok) {
+            throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
         // Check if the response is in JSON format
         const contentType = response.headers.get('content-type');
         if (contentType && contentType.includes('application/json')) {
@@ -54,7 +58,12 @@ document.getElementById('detailsForm').addEventListener('submit', function(event
         errorMessage.style.display = 'block';
     })
     .catch(error => {
-        errorMessage.innerHTML = '<p>There was an error: ' + error.message + '</p>';
+        // Different error handling for network errors or other issues
+        if (error.message === 'Failed to fetch') {
+            errorMessage.innerHTML = '<p>There was a network error: Unable to connect to backend. Check CORS or network settings.</p>';
+        } else {
+            errorMessage.innerHTML = '<p>There was an error: ' + error.message + '</p>';
+        }
         errorMessage.style.color = 'red';
         errorMessage.style.display = 'block';
         console.error('Error:', error);  // Log the error for debugging
