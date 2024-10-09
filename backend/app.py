@@ -10,8 +10,8 @@ load_dotenv(os.path.join(os.path.dirname(__file__), 'config/.env'))
 
 app = Flask(__name__)
 
-# Enable CORS for all routes
-CORS(app)
+# Enable CORS for all routes, allowing all origins and specified methods
+CORS(app, resources={r"/*": {"origins": "*"}}, methods=["POST", "GET", "OPTIONS"])
 
 # Setup logging
 logging.basicConfig(filename='logs/app.log', level=logging.DEBUG, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -29,6 +29,11 @@ def get_db_connection():
     except OperationalError as err:
         logging.error(f"Database connection failed: {err}")
         return None
+
+# Health check endpoint to ensure the server is running
+@app.route('/health', methods=['GET'])
+def health_check():
+    return jsonify({"status": "ok"}), 200
 
 # Route to handle form submissions
 @app.route('/submit', methods=['POST'])
@@ -78,4 +83,5 @@ def submit_form():
         return jsonify({"error": "Internal server error"}), 500
 
 if __name__ == '__main__':
+    # Run the Flask app on port 5000 and bind to all network interfaces
     app.run(host='0.0.0.0', port=5000, debug=True)

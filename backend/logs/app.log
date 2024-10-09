@@ -4,3 +4,67 @@ INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with stat
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 320-944-945
+2024-10-09 18:54:03,699 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.143:5000
+2024-10-09 18:54:03,699 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-09 18:54:03,699 - INFO -  * Restarting with stat
+2024-10-09 18:54:03,889 - WARNING -  * Debugger is active!
+2024-10-09 18:54:03,894 - INFO -  * Debugger PIN: 320-944-945
+2024-10-09 19:27:02,707 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.143:5000
+2024-10-09 19:27:02,708 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-09 19:27:02,708 - INFO -  * Restarting with stat
+2024-10-09 19:27:02,920 - WARNING -  * Debugger is active!
+2024-10-09 19:27:02,924 - INFO -  * Debugger PIN: 320-944-945
+2024-10-09 19:27:14,614 - INFO - 127.0.0.1 - - [09/Oct/2024 19:27:14] "[33mOPTIONS / HTTP/1.1[0m" 404 -
+2024-10-09 19:29:11,209 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.143:5000
+2024-10-09 19:29:11,209 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-09 19:29:11,209 - INFO -  * Restarting with stat
+2024-10-09 19:29:11,417 - WARNING -  * Debugger is active!
+2024-10-09 19:29:11,418 - INFO -  * Debugger PIN: 320-944-945
+2024-10-09 19:29:23,652 - INFO - 127.0.0.1 - - [09/Oct/2024 19:29:23] "[33mOPTIONS / HTTP/1.1[0m" 404 -
+2024-10-09 19:29:51,845 - INFO - 127.0.0.1 - - [09/Oct/2024 19:29:51] "[33mOPTIONS / HTTP/1.1[0m" 404 -
+2024-10-09 19:31:43,409 - ERROR - Error processing data: 400 Bad Request: Failed to decode JSON object: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2024-10-09 19:31:43,410 - INFO - 127.0.0.1 - - [09/Oct/2024 19:31:43] "[35m[1mPOST /submit HTTP/1.1[0m" 500 -
+2024-10-09 19:32:03,355 - ERROR - Error processing data: 400 Bad Request: Failed to decode JSON object: Expecting property name enclosed in double quotes: line 1 column 2 (char 1)
+2024-10-09 19:32:03,356 - INFO - 127.0.0.1 - - [09/Oct/2024 19:32:03] "[35m[1mPOST /submit HTTP/1.1[0m" 500 -
+2024-10-09 19:32:24,738 - INFO - Data successfully inserted: John, 30
+2024-10-09 19:32:24,739 - INFO - 127.0.0.1 - - [09/Oct/2024 19:32:24] "POST /submit HTTP/1.1" 200 -
+2024-10-09 19:32:58,495 - INFO - 127.0.0.1 - - [09/Oct/2024 19:32:58] "[33mOPTIONS / HTTP/1.1[0m" 404 -
+2024-10-09 19:33:00,722 - INFO - 127.0.0.1 - - [09/Oct/2024 19:33:00] "[33mOPTIONS / HTTP/1.1[0m" 404 -
+2024-10-09 19:34:26,638 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.143:5000
+2024-10-09 19:34:26,638 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-09 19:34:26,639 - INFO -  * Restarting with stat
+2024-10-09 19:34:26,824 - WARNING -  * Debugger is active!
+2024-10-09 19:34:26,826 - INFO -  * Debugger PIN: 320-944-945
+2024-10-09 19:34:39,098 - INFO - 127.0.0.1 - - [09/Oct/2024 19:34:39] "OPTIONS /submit HTTP/1.1" 200 -
+2024-10-09 19:34:39,364 - ERROR - Validation failed: Invalid age value.
+2024-10-09 19:34:39,365 - INFO - 127.0.0.1 - - [09/Oct/2024 19:34:39] "[31m[1mPOST /submit HTTP/1.1[0m" 400 -
+2024-10-09 19:34:43,110 - ERROR - Validation failed: Invalid age value.
+2024-10-09 19:34:43,110 - INFO - 127.0.0.1 - - [09/Oct/2024 19:34:43] "[31m[1mPOST /submit HTTP/1.1[0m" 400 -
+2024-10-09 19:34:45,314 - INFO - 127.0.0.1 - - [09/Oct/2024 19:34:45] "OPTIONS /submit HTTP/1.1" 200 -
+2024-10-09 19:34:45,576 - ERROR - Validation failed: Invalid age value.
+2024-10-09 19:34:45,577 - INFO - 127.0.0.1 - - [09/Oct/2024 19:34:45] "[31m[1mPOST /submit HTTP/1.1[0m" 400 -
+2024-10-09 19:38:00,645 - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:5000
+ * Running on http://192.168.236.143:5000
+2024-10-09 19:38:00,645 - INFO - [33mPress CTRL+C to quit[0m
+2024-10-09 19:38:00,646 - INFO -  * Restarting with stat
+2024-10-09 19:38:00,830 - WARNING -  * Debugger is active!
+2024-10-09 19:38:00,831 - INFO -  * Debugger PIN: 320-944-945
+2024-10-09 19:38:21,735 - INFO - 127.0.0.1 - - [09/Oct/2024 19:38:21] "OPTIONS /submit HTTP/1.1" 200 -
+2024-10-09 19:38:23,081 - INFO - Data successfully inserted: test, 3
+2024-10-09 19:38:23,082 - INFO - 127.0.0.1 - - [09/Oct/2024 19:38:23] "POST /submit HTTP/1.1" 200 -
+2024-10-09 19:38:24,259 - INFO - Data successfully inserted: test, 3
+2024-10-09 19:38:24,261 - INFO - 127.0.0.1 - - [09/Oct/2024 19:38:24] "POST /submit HTTP/1.1" 200 -
