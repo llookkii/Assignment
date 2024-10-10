@@ -23,7 +23,7 @@ document.getElementById('detailsForm').addEventListener('submit', function(event
     }
 
     // Convert age to integer
-    const backendUrl = 'http://backend-service:5000/submit';
+    const backendUrl = '/api';
     // Send the form data to the backend
     fetch(backendUrl, {
         method: 'POST',
